@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name - ID</title>
+    <title>Shopping list</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+
+        article > p{
+            color: darkcyan;
+            font-size: 40px;
+        }
+
+        div > p{
+            text-align: right;
+        }
+
+        ul > li{
+            color: darkcyan;
+            font-size: 20px;
+        }
+        main{
+            display: flex;
+            border: 3px solid chocolate;
+            width: 300px;
+            margin: 140px auto;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;           
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container > div {
+            height: 50px;
+            width: 150px;
+            border: 2px solid chocolate;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #Vegetables div:nth-child(1){
+            background-color: cyan;
+            background-image: url("https://www.acouplecooks.com/wp-content/uploads/2020/04/Sauteed-Carrots-001.jpg");
+            background-position: 100% 80%;
+            opacity: 0.5;
+            background-size: 150px;
+        }
+        #Vegetables div:nth-child(2){
+            background-color: darkcyan;
+            background-image: url("https://www.acouplecooks.com/wp-content/uploads/2021/02/How-to-caramelize-onions-007.jpg");
+            background-position: 100% 30%;
+            opacity: 0.5;
+            background-size: 150px;
+        }
+
+        #Meat div:nth-child(1){
+            background-color: blue;
+            background-image: url("https://img.bestrecipes.com.au/alVevc5L/w643-h428-cfill-q90/br/2018/06/chinese-barbecue-pork-recipe-520270-1.jpg");
+            background-position: 100% 80%;
+            opacity: 0.5;
+            background-size: 150px;
+        }
+        #Meat div:nth-child(2){
+            background-color: red;
+            background-image: url("https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg");
+            background-position: 100% 80%;
+            opacity: 0.5;
+            background-size: 150px;
+        }
+
+        #Cereals div:nth-child(1){
+            background-color: black;
+            background-image: url("https://5.imimg.com/data5/HX/PR/GLADMIN-20492482/eggs-fried-rice-500x500.png");
+            background-position: 100% 80%;
+            opacity: 0.5;
+            background-size: 150px;
+        }
+        #Cereals div:nth-child(2){
+            background-color: orange;
+            background-image: url("https://theclevermeal.com/wp-content/uploads/2018/11/IMG_0019-copy-799x1024.jpg");
+            background-position: 100% 80%;
+            opacity: 0.5;
+            background-size: 150px;
+        }
+
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <article>
+            <p>Shopping List</p>
+        </article>
+    </section>
+
+    <ul>
+        <li>Vegetables</li>
+        <ol class="container" id="Vegetables">
+            <div>            
+            <li>
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Carrot</a>
+            </li>
+            </div>
+            <div>
+                <li>
+                    <a href="https://www.acouplecooks.com/best-onion-recipes/">Onion</a>
+                </li>
+            </div>
+        </ol>
+
+        <li>Meat</li>
+        <ol class="container" id="Meat">
+        <div>
+            <li>
+            <a href="https://www.bestrecipes.com.au/recipes/chinese-barbecue-pork-recipe/qlvk34uo?r=easydinners/nq86wyy8&h=easy%20dinners">Beef</a>
+            </li>
+        </div>
+        <div>
+            <li>
+            <a href="https://www.foodiecrush.com/best-grilled-salmon/">Salmon</a>
+            </li>
+        </div>
+
+        </ol>
+
+        <li>Cereals</li>
+        <ol class="container" id="Cereals">
+            <div>          
+            <li>
+                <a href="https://www.joshuaweissman.com/post/uncle-roger-s-fried-rice-but-better">Rice</a>
+            </li>
+            </div>
+            <div>
+            <li>
+                <a href="https://theclevermeal.com/spaghetti-garlic-olive-oil/">Pasta</a>
+            </li>
+            </div>
+
+        </ol>
+    </ul>
+</main>
+</body>
+</html>
